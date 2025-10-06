@@ -161,6 +161,23 @@ pre {
   margin-bottom: 1rem;
   overflow: auto; }
 
+ /* Fade-in + slight slide-up animation for the hero image */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Apply animation to the background image */
+.fade-in-bg {
+  animation: fadeInBackground 2.5s ease-in-out forwards;
+}
+
 figure {
   margin: 0 0 1rem; }
 
